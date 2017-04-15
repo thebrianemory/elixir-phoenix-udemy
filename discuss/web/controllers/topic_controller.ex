@@ -13,7 +13,8 @@ defmodule Discuss.TopicController do
     changeset = Topic.changeset(%Topic{}, topic)
 
     case Repo.insert(changeset) do
-      {:ok, topic} -> IO.inspect(topic)
+      {:ok, topic} ->
+
       {:error, changeset} ->
         render conn, "new.html", changeset: changeset
     end
