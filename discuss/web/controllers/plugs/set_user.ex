@@ -1,4 +1,4 @@
-defm Discuss.Plugs.SetUser do
+defmodule Discuss.Plugs.SetUser do
   import Plug.Conn
   import Phoenix.Controller
 
